@@ -10,17 +10,17 @@
 
 ## 📖 Overview
 
-This project demonstrates a complete **End-to-End CI/CD Pipeline** using modern DevOps tools.
+This project demonstrates an **End-to-End CI/CD Pipeline** built using **GitHub, Jenkins, Docker, Kubernetes, and AWS**.
 
 Whenever code is pushed to GitHub, Jenkins automatically:
 
-- Clones the repository
-- Builds the application
+- Clones the source code
+- Builds the application using Maven
 - Creates a Docker image
 - Pushes the image to Docker Hub
-- Deploys the latest version to a Kubernetes Cluster
+- Deploys the latest version to a Kubernetes cluster
 
-The entire deployment process is fully automated.
+This setup enables fully automated application deployment with minimal manual intervention.
 
 ---
 
@@ -55,30 +55,24 @@ Application Running
 
 # 🛠 Tech Stack
 
-## ☁ Cloud
+## ☁️ Cloud
 
 - AWS EC2
 - AWS VPC
 - Security Groups
 
----
-
-## 🚀 CI/CD
+## 🔄 CI/CD
 
 - Git
 - GitHub
 - Jenkins
-
----
 
 ## 🐳 Containerization
 
 - Docker
 - Docker Hub
 
----
-
-## ☸ Container Orchestration
+## ☸️ Container Orchestration
 
 - Kubernetes
 - kubeadm
@@ -86,20 +80,11 @@ Application Running
 - containerd
 - Calico
 
----
+## 💻 Application
 
-## 💻 Programming
-
-- Java / Spring Boot
-- Flask (Optional)
-
----
-
-## ⚙ Build Tool
-
+- Java
+- Spring Boot
 - Maven
-
----
 
 ## 🐧 Operating System
 
@@ -129,23 +114,19 @@ Application Running
 - Ubuntu 24.04 LTS
 - Jenkins
 - Docker
-- Java 17
+- OpenJDK 17
 
----
+### Kubernetes Master Node
 
-### Kubernetes Master
-
-- Ubuntu
+- Ubuntu 24.04 LTS
 - kubeadm
-- containerd
 - kubectl
-- Calico
+- containerd
+- Calico Network Plugin
 
----
+### Kubernetes Worker Node
 
-### Kubernetes Worker
-
-- Ubuntu
+- Ubuntu 24.04 LTS
 - kubeadm
 - containerd
 
@@ -153,104 +134,56 @@ Application Running
 
 # 🔄 CI/CD Workflow
 
-1. Developer pushes code to GitHub
-2. Jenkins detects changes
-3. Jenkins clones repository
-4. Maven builds the application
-5. Docker image is created
-6. Docker image is pushed to Docker Hub
-7. Kubernetes deployment is updated
-8. New Pods are created
-9. Application becomes available
+1. Developer pushes code to GitHub.
+2. Jenkins automatically triggers the pipeline.
+3. Source code is cloned from GitHub.
+4. Maven builds the application.
+5. Docker image is created.
+6. Docker image is pushed to Docker Hub.
+7. Kubernetes updates the deployment.
+8. New pods are created using the latest image.
+9. Application becomes available through the Kubernetes Service.
 
 ---
 
-# ✨ Features
+# ✨ Key Features
 
 - Automated CI/CD Pipeline
-- Docker Image Build
-- Docker Hub Integration
-- Kubernetes Deployment
-- Rolling Updates
 - GitHub Integration
 - Jenkins Declarative Pipeline
-- Infrastructure hosted on AWS
+- Docker Image Build & Push
+- Kubernetes Deployment
+- Rolling Updates
+- Infrastructure Hosted on AWS
+- Scalable Kubernetes Architecture
 
 ---
 
-# 📸 Project Screenshots
-
-## Jenkins Pipeline
-
-> Add screenshot here
-
-```
-images/jenkins-pipeline.png
-```
-
----
-
-## Docker Hub Repository
-
-> Add screenshot here
-
-```
-images/dockerhub.png
-```
-
----
-
-## Kubernetes Pods
-
-> Add screenshot here
-
-```
-images/k8s-pods.png
-```
-
----
-
-## Running Application
-
-> Add screenshot here
-
-```
-images/application.png
-```
-
----
-
-# 📈 Future Improvements
+# 📈 Future Enhancements
 
 - GitHub Webhooks
-- SonarQube Code Analysis
-- Trivy Image Scanning
+- SonarQube Code Quality Analysis
+- Trivy Image Security Scanning
 - Prometheus Monitoring
-- Grafana Dashboard
+- Grafana Dashboards
 - Helm Charts
-- ArgoCD
-- EKS Deployment
+- Argo CD (GitOps)
+- AWS EKS Deployment
 
 ---
 
 # 👨‍💻 Author
 
-## Rakesh S
+**Rakesh S**
 
-📧 Email
+📧 Email: **rakeshs2k26@gmail.com**
 
-rakeshs2k26@gmail.com
+💼 LinkedIn: **https://www.linkedin.com/in/rakesh-s-66750328a/**
 
-💼 LinkedIn
-
-https://www.linkedin.com/in/rakesh-s-66750328a/
-
-🐙 GitHub
-
-https://github.com/RS-cloud-intellipaat
+🐙 GitHub: **https://github.com/RS-cloud-intellipaat**
 
 ---
 
-# ⭐ If you found this project helpful
+## ⭐ Support
 
-Give this repository a ⭐ Star.
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub!
